@@ -1,0 +1,39 @@
+.whatwedo-section {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-top: 0px;
+    padding-bottom: 94px;
+  }
+}
+.whatwedo-container {
+  display: flex;
+}
+.whatwedo-container > li {
+  position: relative;
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.whatwedo-text-overlay {
+  position: absolute;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.whatwedo-text-overlay > p {
+  margin: 0;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
